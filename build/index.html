@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>
+			在云南，你随手一拍都是一张壁纸
+		</title>
+	</head>
+	<style>
+		div{
+			
+			width: 400px;
+			height: 300px;
+			margin:auto;
+			text-align: center;
+		}
+		p {
+			display: block;
+			margin-block-start: 1em;
+			margin-block-end: 1em;
+			margin-inline-start: 0px;
+			margin-inline-end: 0px;
+			font-family: "楷体";
+			font-size: xx-large;
+		}
+			
+	</style>
+	<script>
+		function init(){
+			setInterval("changeImg()",1000);
+		}
+		var i=1;
+		function changeImg(){
+			i++
+		document.getElementById("tupian").src="img/"+i+".jpeg";
+		if(i==8){
+			i=0;
+		}
+		}
+	</script>
+	<body style="background-image: url(img/8.jpeg);" onload="init()">
+		<div class="divt">
+			<h1 align="center">
+					<font color="dodgerblue" size="7" face="楷体"><i>昆明夜景</i></font>
+				</h1>
+				<h1 align="center">
+					<font color="dodgerblue" size="7" face="楷体"><i>和我在昆明的街头走一走</i></font>
+				</h1>
+				<h1 align="center">
+					<font color="dodgerblue" size="7" face="楷体"><i>我想带你去看星辰</i></font>
+				</h1>
+		</div>
+		<div class="n1">
+			<img id="tupian" src=""  width="400px"/>
+		</div>
+	</body>
+</html>
