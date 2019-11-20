@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>这只是一次普通的JAVAscri练习</title>
+		<style>
+			td{
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<script type="text/javascript">
+        	function gongneng(){
+        		var tr=document.getElementById("fa").insertRow();
+        		var td1=tr.insertCell();
+        		var td2=tr.insertCell();
+        		var td3=tr.insertCell();
+        		td1.innerHTML=document.getElementById("a1").value;
+        		td2.innerHTML=document.getElementById("a2").value;
+        		var s=document.createElement("input");
+        		td3.appendChild(s);
+        		s.setAttribute("type","button");
+        		s.setAttribute("value","删除");
+        		s.onclick=function(){
+        			this.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode);
+        		}	
+        	}
+        </script>
+		<label>学号</label>
+		<input type="number" id="a1"/>
+		<label>姓名</label>
+		<input type="text" id="a2" />
+		<input type="button" value="增加" onclick="gongneng()" / >
+		<br />
+		<table border="1px" width="300px" style="border-collapse: collapse;" id="fa">
+			<tr id="tr">
+				<td>学号</td>
+				<td>姓名</td>
+				<td><a href="">操作</a></td>
+			</tr>	
+		</table>
+	</body>
+</html>
