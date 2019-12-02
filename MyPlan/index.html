@@ -13,8 +13,21 @@
 			width: 1243px;
 			
 		}
+		#tu{
+			height: auto;
+			border: 2px solid blue;
+			animation: donghua 5s;
+			animation-iteration-count: infinite;
+			animation-direction: alternate;
+		}
+		@keyframes donghua{
+			50%{border-color: blue;}
+			80%{border-color: red;}
+			40%(border-color: green;)
+		}
 	</style>
 	<body>
+		<div id="tu">
 		<div>
 			<img src="img/1.png" />
 		</div>
@@ -30,8 +43,7 @@
 		<div>
 			<img src="img/6.png" />
 		</div>
-		<div class="qwe">
-			
+
 		</div>
 	</body>
 </html>
